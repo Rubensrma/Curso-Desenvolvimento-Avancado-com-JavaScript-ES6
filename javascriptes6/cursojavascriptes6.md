@@ -70,14 +70,14 @@ obj.showContext();
 function mult(a, b = 1) {
   return a * b;
 }
-console.log(mult(5))
+console.log(mult(5));
 
 
 //parâmetro padrão como referência a outro parâmetro
 function mult2(a, b = a) {
   return a * b;
 }
-console.log(mult2(5))
+console.log(mult2(5));
 
 
 //parâmetro padrão como função
@@ -89,7 +89,7 @@ function randomNumber() {
 function mult3(a, b = randomNumber()) {
   return a * b;
 }
-console.log(mult3(5))
+console.log(mult3(5));
 ```
 
 ### Aula III - Enhanced Object Literals
@@ -157,7 +157,7 @@ function sum(a, b) {
 
   return value;
 }
-console.log(sum(5, 5, 5, 5))
+console.log(sum(5, 5, 5, 5));
 
 
 //passagens de parâmetros ilimitados
@@ -168,7 +168,7 @@ function sum2(...args) {
   //soma utilizando os métodos de operação de array
   return args.reduce((acum, value) => acum + value, 0)
 }
-console.log(sum2(5, 5, 5, 5))
+console.log(sum2(5, 5, 5, 5));
 
 
 //arrow function com rest operator
@@ -176,7 +176,7 @@ const sum3 = (...args) => {
   return args.reduce((acum, value) => acum + value, 0);
 };
 
-console.log(sum3(5, 5, 5, 5))
+console.log(sum3(5, 5, 5, 5));
 
 
 //primeiros parâmetros separados e demais como argumentos rest operator
@@ -184,7 +184,7 @@ const sum4 = (a, b, ...args) => {
   return a + b + args.reduce((acum, value) => acum + value, 0);
 };
 
-console.log(sum4(5, 5, 5, 5))
+console.log(sum4(5, 5, 5, 5));
 ```
 
 ```
